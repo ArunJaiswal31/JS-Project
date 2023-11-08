@@ -1,0 +1,74 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <title>Online Shopping</title>
+    
+  </head>
+  <body>
+    <header>
+      <h1>Online Shopping</h1>
+      
+    </header>
+
+    <section class="container">
+      <form id="my-form" onsubmit="formsubmit(event)" >
+        
+        
+        <div>
+          <label for="" >Selling Price: </label>
+          <input type="number" id="sell" name="sellprice">
+        
+          <label for="" >Product Name: </label>
+          <input type="text" id="product" name="pname">
+       
+          <label for="">Choose a Category:</label>
+          <select  id="category" name="category">
+            <option >Electronic</option>
+            <option>Food</option>
+            <option>Skincare</option>
+            
+          </select>
+
+          <input class="btn" type="submit" value="Add Product">
+        </div>
+    
+        
+        
+        
+        
+    
+      </form>
+      <div><h2>Products</h2></div>
+      <div id="e"><h3>Electronic items</h3>
+        <div id="listOfitems" name="Electronic">
+        </div></div>
+
+      <div id="f"><h3>Food Items</h3>
+        <div id="listOfitems" name="Food">
+        </div></div>
+
+      <div id="s"><h3>Skincare Items</h3>
+      <div id="listOfitems" name="Skincare">
+       </div></div>
+
+
+     
+
+    </div>
+    
+
+
+    </section>
+    <script src="script.js">
+    </script>
+     
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+  </body>
+
+
+</html>
